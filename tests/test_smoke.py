@@ -1,1 +1,1 @@
-"def test_placeholder():\n    assert True" 
+"def test_placeholder():\n    assert True"

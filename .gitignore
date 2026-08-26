@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# .gitignore
+data/raw/
+data/interim/
+data/processed/
