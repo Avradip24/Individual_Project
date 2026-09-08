@@ -219,7 +219,7 @@ __marimo__/
 
 # .gitignore
 .venv/
-models/
+/models/
 data/raw/
 data/interim/
 data/embeddings/
