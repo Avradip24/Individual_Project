@@ -1,0 +1,16 @@
+model,split,accuracy,macro_f1
+logistic_regression,val,0.9944,0.9956
+logistic_regression,test_in_distribution,0.9944,0.9957
+logistic_regression,test_ood,0.8535,0.8811
+multinomial_nb,val,0.9792,0.9813
+multinomial_nb,test_in_distribution,0.9802,0.9825
+multinomial_nb,test_ood,0.815,0.8365
+linear_svm,val,0.9946,0.9957
+linear_svm,test_in_distribution,0.9941,0.9953
+linear_svm,test_ood,0.8291,0.8514
+random_forest,val,0.9524,0.957
+random_forest,test_in_distribution,0.9495,0.9547
+random_forest,test_ood,0.7275,0.745
+gradient_boosting,val,0.9917,0.9936
+gradient_boosting,test_in_distribution,0.992,0.9936
+gradient_boosting,test_ood,0.7805,0.8191

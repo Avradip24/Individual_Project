@@ -1,0 +1,5 @@
+features,C,n_features,fit_time_s,val_macro_f1,val_accuracy,test_macro_f1,test_accuracy,ood_macro_f1,ood_accuracy
+v1 features (word),1,14438,9.4,0.9901,0.9883,0.9906,0.9892,0.7982,0.7798
+v1 features (word),10,14438,9.6,0.993,0.9917,0.9937,0.9922,0.8311,0.8151
+v2 features (word+char+hand),1,38914,21.5,0.9951,0.9937,0.995,0.9937,0.8692,0.8427
+v2 features (word+char+hand),10,38914,17.9,0.9956,0.9944,0.9957,0.9944,0.8811,0.8535

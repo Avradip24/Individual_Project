@@ -1,0 +1,6 @@
+model,best_params,n_candidates,search_time_s,final_fit_time_s,n_features
+logistic_regression,"{""C"": 10}",6,88.8,17.2,38914
+multinomial_nb,"{""fit_prior"": true, ""alpha"": 0.01}",8,0.5,0.1,38914
+linear_svm,"{""C"": 3}",6,38.3,51.7,38914
+random_forest,"{""n_estimators"": 400, ""min_samples_leaf"": 1, ""max_features"": 0.01, ""max_depth"": 80}",8,234.6,237.3,38914
+gradient_boosting,"{""subsample"": 0.8, ""n_estimators"": 300, ""max_depth"": 4, ""learning_rate"": 0.2, ""colsample_bytree"": 0.6}",8,374.1,59.2,38914
