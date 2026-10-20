@@ -1,0 +1,9 @@
+model,display,params,param_kind,size_on_disk_mb,shared_featurizer_mb,load_time_s,ram_after_load_mb,peak_ram_mb,latency_p50_ms,latency_p95_ms,throughput_per_s,n_single,ood_macro_f1,ood_accuracy,cpu,cpu_count,threads_setting
+logistic_regression,Logistic Regression v2,505895,coefficients,4.05,1.4,26.48,45.6,153.4,3.05,4.88,6901.8,300,0.8811,0.8535,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+multinomial_nb,Naive Bayes v2,505895,log-probs,8.1,1.4,5.07,92.6,185.8,6.7,9.35,6559.1,300,0.8365,0.815,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+linear_svm,Linear SVM v2,505895,coefficients,4.05,1.4,5.9,93.1,181.8,3.22,6.14,5380.5,300,0.8543,0.8331,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+random_forest,Random Forest v2,3063818,tree nodes,514.92,1.4,27.78,73.5,528.7,92.57,232.43,595.0,300,0.745,0.7275,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+gradient_boosting,XGBoost v2,56884,tree nodes,4.51,1.4,11.3,113.7,244.8,9.58,15.28,1677.6,300,0.8191,0.7805,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+frozen_embedding_logreg,Frozen MiniLM + LogReg,117658765,weights,470.64,0.0,77.39,337.0,889.1,88.84,325.87,55.6,300,0.6623,0.6701,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+distilbert_finetuned,DistilBERT fine-tuned,66963469,weights,267.87,0.0,22.39,190.8,932.9,62.11,104.22,48.4,300,0.9329,0.9169,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
+minilm_finetuned,MiniLM fine-tuned,117658765,weights,470.66,0.0,18.95,496.8,1060.6,32.55,40.3,78.9,300,0.8767,0.855,"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",12,default
