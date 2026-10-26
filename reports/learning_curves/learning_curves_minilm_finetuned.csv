@@ -1,0 +1,9 @@
+model,seed,fraction,n_train,split,fit_time_s,macro_f1,accuracy,f1_small,f1_medium,f1_large
+minilm_finetuned,42,0.05,2798,test,226.6,0.897,0.8979,0.8627,0.9176,0.9056
+minilm_finetuned,42,0.05,2798,ood,226.6,0.7616,0.756,0.7375,0.7586,0.7895
+minilm_finetuned,42,0.1,5597,test,293.0,0.9574,0.9571,0.945,0.9698,0.9541
+minilm_finetuned,42,0.1,5597,ood,293.0,0.8125,0.7975,0.8287,0.802,0.8095
+minilm_finetuned,42,0.25,13994,test,474.7,0.9823,0.9812,0.9805,0.9869,0.9783
+minilm_finetuned,42,0.25,13994,ood,474.7,0.8641,0.8504,0.9011,0.8434,0.8529
+minilm_finetuned,42,0.5,27989,test,757.1,0.9909,0.9896,0.9938,0.9929,0.9854
+minilm_finetuned,42,0.5,27989,ood,757.1,0.8668,0.8459,0.911,0.838,0.8587

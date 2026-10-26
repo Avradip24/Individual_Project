@@ -1,0 +1,3 @@
+model,seed,fraction,n_train,split,fit_time_s,macro_f1,accuracy,f1_small,f1_medium,f1_large
+minilm_finetuned,42,1.0,55978,test,,0.9942,0.9927,0.9984,0.9969,0.9867
+minilm_finetuned,42,1.0,55978,ood,,0.8767,0.855,0.9284,0.8535,0.8539
