@@ -1,0 +1,5 @@
+dropped_largest_clusters,rows_left,logistic_regression,multinomial_nb,linear_svm,random_forest,gradient_boosting,frozen_embedding_logreg,distilbert_finetuned,minilm_finetuned
+0,16031,0.8811,0.8365,0.8543,0.745,0.8191,0.6623,0.9329,0.8767
+1,15080,0.8803,0.8616,0.8861,0.7745,0.8511,0.6567,0.9405,0.8835
+3,13950,0.9018,0.8821,0.9085,0.7765,0.8792,0.6751,0.9633,0.909
+5,13412,0.9017,0.8812,0.9085,0.7755,0.8792,0.681,0.9633,0.9087
