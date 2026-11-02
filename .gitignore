@@ -225,4 +225,5 @@ data/interim/
 data/embeddings/
 data/processed/
 data/features_v2/
-reports/calibration/probs/"
+reports/calibration/probs/
+*.bak
