@@ -1,0 +1,157 @@
+model,cls,rank,feature,weight
+linear_svm,Education,1,word__debit barnes,2.531966281496806
+linear_svm,Education,2,word__chegg,1.5969822675316874
+linear_svm,Education,3,word__amazon kindle,1.4905811318810762
+linear_svm,Education,4,word__credit barnes,1.4827885012563018
+linear_svm,Education,5,word__coursera,1.4755714443090522
+linear_svm,Education,6,word__kumon,1.4533733862249814
+linear_svm,Education,7,word__payment barnes,1.4400071576359643
+linear_svm,Education,8,word__datacamp,1.4227556701066713
+linear_svm,Education,9,word__from barnes,1.384057017489713
+linear_svm,Education,10,word__udemy,1.366550354966652
+linear_svm,Education,11,word__pearson,1.364369458793556
+linear_svm,Education,12,word__wyzant,1.321301422605676
+linear_svm,Entertainment,1,word__water park,1.9932148362720274
+linear_svm,Entertainment,2,word__fitness,1.8132525694809671
+linear_svm,Entertainment,3,char__ x ,1.6850370555152538
+linear_svm,Entertainment,4,word__zoo,1.6628695546397627
+linear_svm,Entertainment,5,word__imax,1.5879220546728166
+linear_svm,Entertainment,6,word__steam,1.5459440600984165
+linear_svm,Entertainment,7,word__gym,1.5428276042702238
+linear_svm,Entertainment,8,word__amc,1.5026478706248292
+linear_svm,Entertainment,9,word__prime,1.4768854056005138
+linear_svm,Entertainment,10,word__amazon prime,1.4768854056005138
+linear_svm,Entertainment,11,word__dazn,1.4278345681210487
+linear_svm,Entertainment,12,word__games,1.3393992399628385
+linear_svm,Groceries,1,word__debit trader,2.633334863739536
+linear_svm,Groceries,2,word__debit whole,2.2973336251854004
+linear_svm,Groceries,3,word__debit safeway,1.5959208991067142
+linear_svm,Groceries,4,word__aldi,1.5852016422571464
+linear_svm,Groceries,5,hand__punct_ratio,1.5546594494785597
+linear_svm,Groceries,6,word__publix,1.5032216527422495
+linear_svm,Groceries,7,word__vons,1.4928345422362237
+linear_svm,Groceries,8,word__debit mart,1.4925689294361988
+linear_svm,Groceries,9,word__payment safeway,1.470029579942253
+linear_svm,Groceries,10,word__365 market,1.4252567142984995
+linear_svm,Groceries,11,word__costco whse,1.3492515852915792
+linear_svm,Groceries,12,word__whse,1.3492515852915792
+linear_svm,Healthcare,1,word__lab,2.0235192766493584
+linear_svm,Healthcare,2,word__mri,1.9673750865313004
+linear_svm,Healthcare,3,word__hospital store,1.879348113879677
+linear_svm,Healthcare,4,word__care,1.8196411676486768
+linear_svm,Healthcare,5,word__payment rite,1.74421810184594
+linear_svm,Healthcare,6,word__payment cvs,1.7431839364178825
+linear_svm,Healthcare,7,word__clinic,1.7342678224749295
+linear_svm,Healthcare,8,word__dental,1.6887740830239848
+linear_svm,Healthcare,9,word__online campus,1.6750569700505853
+linear_svm,Healthcare,10,hand__punct_ratio,1.6582415464071323
+linear_svm,Healthcare,11,word__debit rite,1.6317227677147237
+linear_svm,Healthcare,12,word__health,1.5781298925024039
+linear_svm,Housing,1,hand__cue_housing,1.4512066807528068
+linear_svm,Housing,2,word__cu,0.9235338542752227
+linear_svm,Housing,3,word__mtg,0.7882131641890663
+linear_svm,Housing,4,char__cu ,0.7652434985302577
+linear_svm,Housing,5,word__cu payment,0.7295175972492521
+linear_svm,Housing,6,word__nationstar,0.7122034771523865
+linear_svm,Housing,7,word__united wholesale,0.6771734425473087
+linear_svm,Housing,8,char__u ,0.6307695901175688
+linear_svm,Housing,9,word__pennymac,0.6229188013855154
+linear_svm,Housing,10,word__escrow,0.618557152218219
+linear_svm,Housing,11,word__newrez,0.6143553707482694
+linear_svm,Housing,12,char__cu,0.6096896106525895
+linear_svm,Income,1,word__pay,1.8136324635867525
+linear_svm,Income,2,word__wage,1.7355104131796733
+linear_svm,Income,3,word__payments ppd,1.7348963909775383
+linear_svm,Income,4,hand__cue_payroll,1.4658940507783387
+linear_svm,Income,5,word__reward,1.424971982829678
+linear_svm,Income,6,word__bonus,1.4090174368971444
+linear_svm,Income,7,word__refund,1.3947392465398523
+linear_svm,Income,8,word__deposit,1.3770538581679639
+linear_svm,Income,9,word__freelance,1.3665711898648716
+linear_svm,Income,10,word__franchise,1.3498337653451586
+linear_svm,Income,11,word__holiday pay,1.3458647029777444
+linear_svm,Income,12,word__annuity,1.2973851738777347
+linear_svm,Insurance,1,word__usaa,1.734816349456129
+linear_svm,Insurance,2,word__bestow,1.5508418358315854
+linear_svm,Insurance,3,word__united healthcare,1.5247222937013378
+linear_svm,Insurance,4,word__aflac,1.4301339515490157
+linear_svm,Insurance,5,word__geico,1.420845200013555
+linear_svm,Insurance,6,word__hippo,1.4152874175746906
+linear_svm,Insurance,7,word__anthem,1.3885155327204717
+linear_svm,Insurance,8,word__debit usaa,1.3672468917821174
+linear_svm,Insurance,9,word__ladder,1.3658373911232995
+linear_svm,Insurance,10,word__travelers,1.2915767725023288
+linear_svm,Insurance,11,word__blue cross,1.2904652458626154
+linear_svm,Insurance,12,word__cross,1.2904652458626154
+linear_svm,Other,1,word__xfer web,4.735629102480031
+linear_svm,Other,2,word__atm,1.4724611146142121
+linear_svm,Other,3,word__remote deposit,1.4192357863474487
+linear_svm,Other,4,word__mobile deposit,1.3537366589671915
+linear_svm,Other,5,word__paypal payment,1.3000727147600093
+linear_svm,Other,6,word__fee,1.246027542744041
+linear_svm,Other,7,word__dda,1.2183880085738072
+linear_svm,Other,8,word__credit mobile,1.2090174929739104
+linear_svm,Other,9,word__check,1.0976399695606742
+linear_svm,Other,10,word__citi autopay,1.0521473503870777
+linear_svm,Other,11,word__citi,1.0521473503870777
+linear_svm,Other,12,word__to,1.0193222600256038
+linear_svm,Restaurants,1,char__'s,1.9133397628198514
+linear_svm,Restaurants,2,char__'s ,1.8899745919936923
+linear_svm,Restaurants,3,word__checkers,1.5612736624222534
+linear_svm,Restaurants,4,word__ihop,1.4879548227553876
+linear_svm,Restaurants,5,word__instacart,1.4418041432960627
+linear_svm,Restaurants,6,word__grubhub,1.358705192136753
+linear_svm,Restaurants,7,word__uber eats,1.3559779262337632
+linear_svm,Restaurants,8,word__eats,1.3559779262337632
+linear_svm,Restaurants,9,word__wingstop,1.347985639034699
+linear_svm,Restaurants,10,word__great wall,1.3441079300669367
+linear_svm,Restaurants,11,word__kfc,1.3385801088974736
+linear_svm,Restaurants,12,word__moe,1.3377628336040643
+linear_svm,Shopping,1,word__debit gold,3.5621123103740215
+linear_svm,Shopping,2,word__debit anytime,3.37768644464389
+linear_svm,Shopping,3,word__debit 24,3.2461065047283566
+linear_svm,Shopping,4,word__debit crunch,3.2345498357672726
+linear_svm,Shopping,5,word__debit equinox,3.14064726229944
+linear_svm,Shopping,6,word__tiktok shop,2.720069308659981
+linear_svm,Shopping,7,word__debit crossfit,2.6915738444821695
+linear_svm,Shopping,8,word__debit walmart,2.669232656223137
+linear_svm,Shopping,9,word__payment gold,2.391554656625933
+linear_svm,Shopping,10,word__dollar general,2.384173221277417
+linear_svm,Shopping,11,word__debit target,2.250502110776712
+linear_svm,Shopping,12,word__apple store,2.143477220032631
+linear_svm,Transportation,1,word__costco gas,2.53589448707947
+linear_svm,Transportation,2,word__bart,2.386299594735778
+linear_svm,Transportation,3,char__ta ,2.1974840433433473
+linear_svm,Transportation,4,word__cta,2.1735741269471163
+linear_svm,Transportation,5,word__76,2.1629031081986523
+linear_svm,Transportation,6,word__debit 76,2.077783643109226
+linear_svm,Transportation,7,word__mta,1.9929043884081916
+linear_svm,Transportation,8,word__midas,1.8945933624936033
+linear_svm,Transportation,9,word__bp,1.850449926292129
+linear_svm,Transportation,10,word__safelite,1.718387765489955
+linear_svm,Transportation,11,word__spothero,1.7078770639034069
+linear_svm,Transportation,12,word__firestone,1.6846614502104105
+linear_svm,Travel,1,word__debit avis,2.043951462993767
+linear_svm,Travel,2,word__debit turo,1.9993237969475084
+linear_svm,Travel,3,hand__length,1.9576206095232926
+linear_svm,Travel,4,hand__punct_ratio,1.9192316082954344
+linear_svm,Travel,5,word__debit hertz,1.775985775300202
+linear_svm,Travel,6,word__clear,1.7140024039291708
+linear_svm,Travel,7,word__best western,1.6232575272988412
+linear_svm,Travel,8,word__airport parking,1.6221906781542266
+linear_svm,Travel,9,word__expedia,1.5866766646520178
+linear_svm,Travel,10,word__debit jetblue,1.4674346918163834
+linear_svm,Travel,11,word__hilton,1.4264883432760391
+linear_svm,Travel,12,word__kayak,1.382747875251883
+linear_svm,Utilities,1,word__ting,1.819279479268336
+linear_svm,Utilities,2,word__debit frontier,1.819020350578924
+linear_svm,Utilities,3,word__wifi,1.769188531677254
+linear_svm,Utilities,4,word__dish,1.7673060274783796
+linear_svm,Utilities,5,word__cox,1.7658887846598972
+linear_svm,Utilities,6,word__wow,1.6594373887991571
+linear_svm,Utilities,7,word__fiber,1.6249907795987597
+linear_svm,Utilities,8,word__at,1.6225125333686645
+linear_svm,Utilities,9,word__rcn,1.5805871818823212
+linear_svm,Utilities,10,word__dsl,1.5484702125301384
+linear_svm,Utilities,11,word__aes,1.5317270355578285
+linear_svm,Utilities,12,word__charter,1.5218853418965057

@@ -1,0 +1,157 @@
+model,cls,rank,feature,weight
+logistic_regression,Education,1,word__debit barnes,5.886102525920493
+logistic_regression,Education,2,word__pluralsight,5.3787709961902435
+logistic_regression,Education,3,word__chegg,5.3204340958267835
+logistic_regression,Education,4,word__coursera,5.015107359167949
+logistic_regression,Education,5,word__datacamp,4.944964140263366
+logistic_regression,Education,6,word__masterclass,4.728524989343764
+logistic_regression,Education,7,word__pearson,4.663429421422597
+logistic_regression,Education,8,word__tuition,4.570720290751015
+logistic_regression,Education,9,word__udemy,4.52220115029964
+logistic_regression,Education,10,word__amazon kindle,4.478757769069927
+logistic_regression,Education,11,word__kumon,4.417973348235332
+logistic_regression,Education,12,hand__length,4.326146227992958
+logistic_regression,Entertainment,1,word__fitness,4.382601869380065
+logistic_regression,Entertainment,2,word__water park,4.272627292467375
+logistic_regression,Entertainment,3,word__zoo,4.078158825247793
+logistic_regression,Entertainment,4,word__imax,3.9806534710010477
+logistic_regression,Entertainment,5,word__amc,3.822275650337254
+logistic_regression,Entertainment,6,word__gym,3.6756323071075596
+logistic_regression,Entertainment,7,hand__has_domain,3.4218383712394687
+logistic_regression,Entertainment,8,word__dazn,3.400986632729805
+logistic_regression,Entertainment,9,word__amazon prime,3.3066666843440133
+logistic_regression,Entertainment,10,word__prime,3.3066666843440133
+logistic_regression,Entertainment,11,word__espn,3.305490987033119
+logistic_regression,Entertainment,12,word__livenation,3.261125275687217
+logistic_regression,Groceries,1,hand__punct_ratio,6.423745379544998
+logistic_regression,Groceries,2,word__debit,4.473329774010105
+logistic_regression,Groceries,3,word__aldi,4.2845040972366855
+logistic_regression,Groceries,4,word__debit whole,4.231964263155225
+logistic_regression,Groceries,5,word__debit trader,4.029220788828291
+logistic_regression,Groceries,6,word__publix,3.951018795624666
+logistic_regression,Groceries,7,word__vons,3.932134039741162
+logistic_regression,Groceries,8,word__kroger,3.8224753166174956
+logistic_regression,Groceries,9,word__cardenas,3.655685171346271
+logistic_regression,Groceries,10,word__ranch,3.6193244577109867
+logistic_regression,Groceries,11,word__mitsuwa,3.5874492537868226
+logistic_regression,Groceries,12,word__stop shop,3.569979855663324
+logistic_regression,Healthcare,1,word__dental,5.825778730266732
+logistic_regression,Healthcare,2,word__pharmacy,5.45225670732172
+logistic_regression,Healthcare,3,word__lab,5.384275666243477
+logistic_regression,Healthcare,4,word__mri,4.963004879042086
+logistic_regression,Healthcare,5,word__care,4.671623086628742
+logistic_regression,Healthcare,6,word__clinic,4.447203119715673
+logistic_regression,Healthcare,7,word__debit dr,4.283748363153013
+logistic_regression,Healthcare,8,word__debit rite,3.9863592620538726
+logistic_regression,Healthcare,9,word__surgery,3.934583107926915
+logistic_regression,Healthcare,10,word__mdlive,3.8359509871679074
+logistic_regression,Healthcare,11,word__health,3.796261900495442
+logistic_regression,Healthcare,12,word__amwell,3.7355088407362005
+logistic_regression,Housing,1,hand__cue_housing,21.04991035673769
+logistic_regression,Housing,2,word__pmt,5.309340114612783
+logistic_regression,Housing,3,word__mortgage,5.0771597110596165
+logistic_regression,Housing,4,word__escrow,4.26152199319133
+logistic_regression,Housing,5,word__payment,4.148755300711851
+logistic_regression,Housing,6,word__rent,3.6198514610890573
+logistic_regression,Housing,7,word__cu,3.363334315387486
+logistic_regression,Housing,8,word__nationstar,3.2706094845067613
+logistic_regression,Housing,9,word__principal,3.202482927850451
+logistic_regression,Housing,10,word__principal pmt,3.202482927850451
+logistic_regression,Housing,11,word__mtg,3.15635360372609
+logistic_regression,Housing,12,word__debit principal,3.0886934442074616
+logistic_regression,Income,1,hand__cue_payroll,12.909520837683415
+logistic_regression,Income,2,word__pay,4.784681074530265
+logistic_regression,Income,3,word__interest,4.453991039157632
+logistic_regression,Income,4,word__wage,4.4420651297506835
+logistic_regression,Income,5,word__refund,4.311750296501699
+logistic_regression,Income,6,word__income,4.277205035060448
+logistic_regression,Income,7,word__ppd,3.9752377998865125
+logistic_regression,Income,8,word__deposit,3.908876756020221
+logistic_regression,Income,9,word__bonus,3.891458725606916
+logistic_regression,Income,10,word__freelance,3.828618439795813
+logistic_regression,Income,11,word__reward,3.79963714601751
+logistic_regression,Income,12,word__franchise,3.715667407937219
+logistic_regression,Insurance,1,word__usaa,4.726590917763909
+logistic_regression,Insurance,2,word__ins,4.343024467115883
+logistic_regression,Insurance,3,word__bestow,4.109617799191266
+logistic_regression,Insurance,4,word__geico,4.023153096360588
+logistic_regression,Insurance,5,word__aflac,3.935945217183117
+logistic_regression,Insurance,6,word__ladder,3.91483515323934
+logistic_regression,Insurance,7,word__debit usaa,3.887013008002659
+logistic_regression,Insurance,8,word__hippo,3.852384128221429
+logistic_regression,Insurance,9,word__anthem,3.7991069567026154
+logistic_regression,Insurance,10,word__insurance,3.704590065261343
+logistic_regression,Insurance,11,word__travelers,3.6191157151307944
+logistic_regression,Insurance,12,word__cigna,3.5738276600655374
+logistic_regression,Other,1,word__xfer web,13.722468908127304
+logistic_regression,Other,2,word__fee,5.8906174241176
+logistic_regression,Other,3,word__atm,4.598389416743021
+logistic_regression,Other,4,hand__cue_fee,4.45091777003859
+logistic_regression,Other,5,word__remote deposit,4.247084863251152
+logistic_regression,Other,6,hand__cue_transfer,4.239827382898806
+logistic_regression,Other,7,word__dda,3.911470277215557
+logistic_regression,Other,8,word__check,3.8379503618733946
+logistic_regression,Other,9,word__trade,3.523377204828133
+logistic_regression,Other,10,word__to,3.409907025649217
+logistic_regression,Other,11,word__payment thank,3.302915163989997
+logistic_regression,Other,12,word__thank,3.302915163989997
+logistic_regression,Restaurants,1,char__'s,5.690439579510414
+logistic_regression,Restaurants,2,char__'s ,5.571209506016118
+logistic_regression,Restaurants,3,word__kfc,4.055677641874254
+logistic_regression,Restaurants,4,word__checkers,4.026086654035466
+logistic_regression,Restaurants,5,hand__cue_food,3.843238888049246
+logistic_regression,Restaurants,6,word__walmart supercenter,3.6840955434828055
+logistic_regression,Restaurants,7,word__supercenter,3.6840955434828055
+logistic_regression,Restaurants,8,word__postmates,3.5224155071737244
+logistic_regression,Restaurants,9,word__blimpie,3.4899572946042925
+logistic_regression,Restaurants,10,word__instacart,3.485556041128793
+logistic_regression,Restaurants,11,word__qdoba,3.4103549084198863
+logistic_regression,Restaurants,12,word__culver,3.402629207316056
+logistic_regression,Shopping,1,word__debit gold,6.054305309789902
+logistic_regression,Shopping,2,word__debit anytime,5.6737398552689475
+logistic_regression,Shopping,3,word__debit walmart,5.643579900439306
+logistic_regression,Shopping,4,word__debit target,5.499593695815788
+logistic_regression,Shopping,5,word__debit 24,5.48943039650543
+logistic_regression,Shopping,6,word__debit crunch,5.389492480822604
+logistic_regression,Shopping,7,word__debit equinox,5.388091438016514
+logistic_regression,Shopping,8,word__debit crossfit,4.984736649374556
+logistic_regression,Shopping,9,word__amazon,4.940311927344752
+logistic_regression,Shopping,10,word__ulta,4.858922045772008
+logistic_regression,Shopping,11,word__gamestop,4.684828765020305
+logistic_regression,Shopping,12,word__adidas,4.665501938377824
+logistic_regression,Transportation,1,word__76,7.097422798327556
+logistic_regression,Transportation,2,word__debit 76,5.957871521265775
+logistic_regression,Transportation,3,word__costco gas,5.364619583263361
+logistic_regression,Transportation,4,char__ta ,5.2992755194676215
+logistic_regression,Transportation,5,word__bart,4.94245579196615
+logistic_regression,Transportation,6,word__cta,4.736878864718169
+logistic_regression,Transportation,7,word__midas,4.565297650770405
+logistic_regression,Transportation,8,word__bp,4.451038494054757
+logistic_regression,Transportation,9,word__auto,4.43901701431547
+logistic_regression,Transportation,10,word__safelite,4.371927267525962
+logistic_regression,Transportation,11,word__mta,4.336016526075448
+logistic_regression,Transportation,12,word__smog,4.297652707030934
+logistic_regression,Travel,1,hand__cue_housing,7.673712717043045
+logistic_regression,Travel,2,hand__punct_ratio,5.2677519312479095
+logistic_regression,Travel,3,word__expedia,4.939024786668005
+logistic_regression,Travel,4,word__turo,4.848914495768649
+logistic_regression,Travel,5,word__avis,4.751144336818093
+logistic_regression,Travel,6,word__kayak,4.588192722218607
+logistic_regression,Travel,7,word__hilton,4.384123039978074
+logistic_regression,Travel,8,word__clear,4.376324024450203
+logistic_regression,Travel,9,word__vrbo,4.3736950737479665
+logistic_regression,Travel,10,word__car,4.201678140612718
+logistic_regression,Travel,11,word__radisson,4.182758648388071
+logistic_regression,Travel,12,word__hertz,4.179448686441854
+logistic_regression,Utilities,1,word__wifi,4.699650087434893
+logistic_regression,Utilities,2,word__cox,4.6176784290857755
+logistic_regression,Utilities,3,word__dish,4.320135809857331
+logistic_regression,Utilities,4,word__at,4.249494044938535
+logistic_regression,Utilities,5,word__fiber,4.214566493351781
+logistic_regression,Utilities,6,word__wow,4.063153690215721
+logistic_regression,Utilities,7,word__charter,4.054782588142566
+logistic_regression,Utilities,8,word__aes,4.030049918470729
+logistic_regression,Utilities,9,word__dsl,3.9902626685372535
+logistic_regression,Utilities,10,word__rcn,3.961080345925828
+logistic_regression,Utilities,11,word__ting,3.9513729498654144
+logistic_regression,Utilities,12,word__sprint,3.90989997897268
