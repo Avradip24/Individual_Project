@@ -1,0 +1,16 @@
+model,version,accuracy,share_predicted_other
+logistic_regression,original,0.8748685594111462,0.1167192429022082
+logistic_regression,no_phrase,0.961093585699264,0.0
+logistic_regression,merchant_only,1.0,0.0
+linear_svm,original,0.3449001051524711,0.655099894847529
+linear_svm,no_phrase,0.9379600420609885,0.0010515247108307045
+linear_svm,merchant_only,1.0,0.0
+multinomial_nb,original,0.34174553101997895,0.658254468980021
+multinomial_nb,no_phrase,0.9726603575184016,0.0
+multinomial_nb,merchant_only,1.0,0.0
+gradient_boosting,original,0.24815983175604628,0.7518401682439537
+gradient_boosting,no_phrase,0.9768664563617245,0.0010515247108307045
+gradient_boosting,merchant_only,0.9842271293375394,0.0
+random_forest,original,0.17770767613038907,0.6109358569926393
+random_forest,no_phrase,0.9568874868559412,0.0
+random_forest,merchant_only,0.9379600420609885,0.0
