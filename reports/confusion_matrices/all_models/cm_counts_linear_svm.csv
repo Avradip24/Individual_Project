@@ -1,0 +1,14 @@
+,Education,Entertainment,Groceries,Healthcare,Housing,Income,Insurance,Other,Restaurants,Shopping,Transportation,Travel,Utilities
+Education,447,0,0,0,0,0,0,88,0,0,0,0,0
+Entertainment,1,1590,12,13,0,9,0,142,60,283,44,2,2
+Groceries,0,0,428,0,0,0,0,0,2,2,0,0,0
+Healthcare,0,37,0,838,0,0,0,53,1,11,0,0,0
+Housing,0,0,0,0,1192,0,0,0,0,0,0,0,0
+Income,0,61,0,43,0,888,0,490,2,2,29,0,146
+Insurance,0,0,0,0,0,0,535,0,0,0,0,0,0
+Other,0,7,0,0,0,4,0,1523,4,19,0,0,0
+Restaurants,0,28,19,21,0,0,0,0,1292,20,20,0,0
+Shopping,0,66,7,38,0,0,63,118,89,1483,215,0,3
+Transportation,0,0,61,0,0,0,0,32,14,7,1260,0,3
+Travel,0,0,0,0,0,0,0,153,0,0,0,444,0
+Utilities,0,1,0,0,0,0,0,0,0,31,92,5,1436

@@ -1,0 +1,157 @@
+cls,rank,feature,log_ratio
+Education,1,word__brilliant org,10.09946190315478
+Education,2,word__org,10.09946190315478
+Education,3,word__brilliant,10.09946190315478
+Education,4,word__tuition,9.807449627263146
+Education,5,word__pluralsight,9.764967057239954
+Education,6,word__debit brilliant,9.720858716972806
+Education,7,word__college of,9.222062133489914
+Education,8,word__college,9.222062133489914
+Education,9,word__debit pluralsight,9.149283378440993
+Education,10,word__tutoring,9.144768869280533
+Education,11,char__nt.,9.010501795978328
+Education,12,char__ant.,9.010501795978328
+Entertainment,1,word__apple com,8.790074578153954
+Entertainment,2,word__com bill,8.790074578153954
+Entertainment,3,word__debit google,8.484738255363617
+Entertainment,4,word__museum,8.28234390762863
+Entertainment,5,word__regal,8.18878633781299
+Entertainment,6,word__pp apple,8.155287765811572
+Entertainment,7,word__theme,8.143057770766847
+Entertainment,8,word__theme park,8.143057770766847
+Entertainment,9,word__amc,8.067847443490674
+Entertainment,10,word__golf,8.053869460129352
+Entertainment,11,word__zoo,8.052581841822473
+Entertainment,12,word__climbing,8.04769692138513
+Groceries,1,word__savemart,8.886802432713672
+Groceries,2,word__sq,8.813982575500514
+Groceries,3,word__debit savemart,8.796131157873655
+Groceries,4,word__debit sq,8.795660337672128
+Groceries,5,word__supermarket,8.670773272036428
+Groceries,6,word__wholefds,8.595906692713367
+Groceries,7,word__debit wholefds,8.576076454014213
+Groceries,8,word__lion,8.520655771301685
+Groceries,9,word__wegmans,8.489527840941902
+Groceries,10,word__debit kroger,8.480912553804195
+Groceries,11,word__mitsuwa,8.476664970703581
+Groceries,12,word__sprouts,8.46163120719855
+Healthcare,1,word__pharmacy,9.581534626229011
+Healthcare,2,word__dental,9.566240235427195
+Healthcare,3,word__debit dr,9.398567131717062
+Healthcare,4,word__care,9.18322831403812
+Healthcare,5,word__therapy,9.121063928923128
+Healthcare,6,word__clinic,9.117629758913111
+Healthcare,7,word__medical,8.878478992308555
+Healthcare,8,char__denta,8.721015622286586
+Healthcare,9,char__ dent,8.721015622286586
+Healthcare,10,word__health,8.633707773238498
+Healthcare,11,word__walmart pharmacy,8.587185727823709
+Healthcare,12,word__physical,8.56149723702431
+Housing,1,hand__cue_housing,11.070553674575269
+Housing,2,word__mortgage,10.577788636764181
+Housing,3,word__mortgage payment,10.029648543679965
+Housing,4,word__rent,9.899728286633177
+Housing,5,word__debit mortgage,9.833715462887294
+Housing,6,char__tga,9.603713005976015
+Housing,7,char__rtga,9.603713005976015
+Housing,8,char__tgage,9.603361346090612
+Housing,9,char__mort,9.603361346090612
+Housing,10,char__mortg,9.603361346090612
+Housing,11,char__gag,9.603361346090612
+Housing,12,char__gage,9.603361346090612
+Income,1,hand__cue_payroll,11.393006245075057
+Income,2,word__payroll,9.955437172450491
+Income,3,word__interest,9.100987012303506
+Income,4,char__ayr,9.013321007070346
+Income,5,char__payro,9.013321007070346
+Income,6,char__payr,9.013321007070346
+Income,7,char__ayrol,9.013321007070346
+Income,8,char__ayro,9.013321007070346
+Income,9,word__salary,8.928915066566866
+Income,10,word__reward,8.852889662761442
+Income,11,word__refund,8.846536196539375
+Income,12,char__ payr,8.834511448263981
+Insurance,1,word__insurance,9.495088741187303
+Insurance,2,word__premium ppd,9.461350187074068
+Insurance,3,word__ins,9.375836774209068
+Insurance,4,word__insurance ppd,8.960176003023996
+Insurance,5,word__pymt ppd,8.935045984459437
+Insurance,6,word__billing ppd,8.88490240810879
+Insurance,7,word__inspayment,8.867371026227726
+Insurance,8,word__inspayment ppd,8.867371026227726
+Insurance,9,word__ins premium,8.85301010445239
+Insurance,10,word__premium,8.85026047722598
+Insurance,11,word__eft pymt,8.790317532716085
+Insurance,12,word__eft,8.790317532716085
+Other,1,word__fee,10.065793841709027
+Other,2,word__atm,9.667172491369811
+Other,3,word__debit atm,9.432268077863375
+Other,4,char__ fee ,9.332514241552268
+Other,5,char__ fee,9.332514241552268
+Other,6,word__account,9.108178077662608
+Other,7,word__transaction,9.074779679823461
+Other,8,char__/0 ,9.046522993884615
+Other,9,char__0/0 ,9.046522993884615
+Other,10,char__0/0,9.046522993884615
+Other,11,char__ 0/,9.046522993884615
+Other,12,char__ 0/0,9.046522993884615
+Restaurants,1,word__tst,8.845571577460458
+Restaurants,2,word__debit tst,8.818481436173766
+Restaurants,3,word__cane,8.647482008255352
+Restaurants,4,word__subway,8.639021787730186
+Restaurants,5,word__culver,8.600933812790501
+Restaurants,6,word__rally,8.559388552283865
+Restaurants,7,word__burger,8.413078465976058
+Restaurants,8,word__king,8.40668852613812
+Restaurants,9,word__house,8.381894576649003
+Restaurants,10,word__garden,8.380205948053506
+Restaurants,11,word__whataburger,8.378374440587988
+Restaurants,12,word__hardee,8.34277621411921
+Shopping,1,word__debit target,9.74340875107674
+Shopping,2,word__target,9.212214493331345
+Shopping,3,word__clips,8.583866342456556
+Shopping,4,word__sephora,8.535792844368553
+Shopping,5,word__amazon mktpl,8.452922802754422
+Shopping,6,word__mktpl,8.452922802754422
+Shopping,7,word__amazon com,8.403610823583136
+Shopping,8,word__nordstrom,8.34490957752594
+Shopping,9,word__ulta,8.319634733896496
+Shopping,10,word__massage,8.291033449122441
+Shopping,11,char__rget,8.266929099601075
+Shopping,12,char__rget ,8.266929099601075
+Transportation,1,word__bp,8.956178080676171
+Transportation,2,word__uber trip,8.729665082513886
+Transportation,3,word__trip,8.729665082513886
+Transportation,4,word__shell,8.641904696538898
+Transportation,5,word__mta,8.623148539087278
+Transportation,6,word__cta,8.622957949557915
+Transportation,7,word__bart,8.572055890142767
+Transportation,8,word__megabus,8.48254507281743
+Transportation,9,word__getaround,8.457518677800937
+Transportation,10,word__maven,8.449987175149484
+Transportation,11,word__wmata,8.447658847442936
+Transportation,12,word__amtrak,8.395905777365947
+Travel,1,word__cruise,9.352903621325012
+Travel,2,word__booking,9.293167814779412
+Travel,3,word__enrollment,9.15732068361417
+Travel,4,word__line,9.059049570402006
+Travel,5,word__airlines,8.986249803241833
+Travel,6,word__cruises,8.974562412711798
+Travel,7,word__inn,8.85366284175379
+Travel,8,char__cruis,8.851238759371734
+Travel,9,char__uise,8.851238759371734
+Travel,10,char__crui,8.851238759371734
+Travel,11,char__ crui,8.851238759371734
+Travel,12,char__ruise,8.851238759371734
+Utilities,1,word__cable,9.264595129967255
+Utilities,2,word__wifi,9.09810721852394
+Utilities,3,word__energy,9.039043526522091
+Utilities,4,word__at,8.961663507475134
+Utilities,5,word__broadband,8.960917953876958
+Utilities,6,word__cox,8.86023226653058
+Utilities,7,word__phone,8.831720138408823
+Utilities,8,word__electric,8.777843481564961
+Utilities,9,word__optimum,8.756971142744108
+Utilities,10,word__comcast,8.7444146621843
+Utilities,11,word__starlink,8.737347942472486
+Utilities,12,word__water,8.687299891902104
