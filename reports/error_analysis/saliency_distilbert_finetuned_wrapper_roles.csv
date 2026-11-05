@@ -1,0 +1,7 @@
+model,part,rows,n,mean_drop_p_true,mean_drop_p_other
+distilbert_finetuned,tag,right,791,0.11772601306438446,-0.1159932091832161
+distilbert_finetuned,tag,wrong,160,-0.21331167221069336,0.22233827412128448
+distilbert_finetuned,phrase,right,791,-0.007458122447133064,0.0073039233684539795
+distilbert_finetuned,phrase,wrong,160,-0.9497413635253906,0.949589729309082
+distilbert_finetuned,merchant,right,791,0.9923416972160339,-0.9926952123641968
+distilbert_finetuned,merchant,wrong,160,0.05017458274960518,-0.050409357994794846

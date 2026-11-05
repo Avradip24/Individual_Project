@@ -1,0 +1,48 @@
+text,true,predicted,word,support_pred,support_true
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,[credit],0.0,-5.4485014e-08
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,Zelle,0.0,-5.155826e-09
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,payment,0.9999993,1.1981314e-07
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,from,0.99990624,-8.1178605e-06
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,JOHN,0.0,3.5989416e-09
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,PEREZ,0.0,4.4329624e-09
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,I10QQN0NCF9F,0.0,-4.017309e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,[credit],1.1920929e-07,-8.02231e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,Zelle,0.0,1.0308547e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,payment,0.9999986,8.4940964e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,from,0.43238807,-0.00036096576
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,MARY,0.0,6.8024804e-09
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,JOHNSON,0.0,-2.7071678e-09
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,80CVGO6OPIMI,0.0,-2.834092e-08
+Family Dollar Store,Shopping,Transportation,Family,-0.0015648007,1.5036581e-05
+Family Dollar Store,Shopping,Transportation,Dollar,0.9853102,-0.00031839634
+Family Dollar Store,Shopping,Transportation,Store,-0.0015299916,1.4526073e-05
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,Family,-6.568432e-05,1.3817635e-06
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,Dollar,0.77727926,-0.00071081746
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,#3898,0.040753067,-2.303847e-05
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,-,1.680851e-05,-2.2435654e-07
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,USA,-2.6583672e-05,5.7798e-07
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,Branch,-3.4093857e-05,6.9838825e-07
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,-,-5.710125e-05,1.1307146e-06
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Transportation,Weekend,-5.364418e-05,1.2390788e-06
+Von Maur - USA Center TXN425720,Shopping,Transportation,Von,-1.66893e-06,6.4817215e-08
+Von Maur - USA Center TXN425720,Shopping,Transportation,Maur,2.9802322e-06,-4.7500222e-08
+Von Maur - USA Center TXN425720,Shopping,Transportation,-,-1.1920929e-07,9.072295e-09
+Von Maur - USA Center TXN425720,Shopping,Transportation,USA,-8.34465e-07,-7.991446e-09
+Von Maur - USA Center TXN425720,Shopping,Transportation,Center,1.1920929e-07,-7.5993967e-10
+Von Maur - USA Center TXN425720,Shopping,Transportation,TXN425720,1.1920929e-06,-2.7006081e-08
+Von Maur,Shopping,Transportation,Von,-2.6226044e-06,4.7068994e-08
+Von Maur,Shopping,Transportation,Maur,1.5735626e-05,-6.746791e-08
+UPS Store #6885 TXN995111,Shopping,Transportation,UPS,0.99996895,-0.9971775
+UPS Store #6885 TXN995111,Shopping,Transportation,Store,0.0,8.5660744e-08
+UPS Store #6885 TXN995111,Shopping,Transportation,#6885,1.1920929e-07,7.529792e-09
+UPS Store #6885 TXN995111,Shopping,Transportation,TXN995111,1.1920929e-07,-5.7459744e-08
+UPS Store #8485,Shopping,Transportation,UPS,0.73526174,-0.12705159
+UPS Store #8485,Shopping,Transportation,Store,-2.3841858e-07,1.4963707e-07
+UPS Store #8485,Shopping,Transportation,#8485,2.2649765e-06,-2.6845393e-07
+Paternity Leave #5861 Online,Income,Income,Paternity,-0.0008082986,-0.0008082986
+Paternity Leave #5861 Online,Income,Income,Leave,0.54748535,0.54748535
+Paternity Leave #5861 Online,Income,Income,#5861,-0.0004963279,-0.0004963279
+Paternity Leave #5861 Online,Income,Income,Online,0.0067771673,0.0067771673
+Paternity Leave Store,Income,Income,Paternity,-0.00019747019,-0.00019747019
+Paternity Leave Store,Income,Income,Leave,0.049322367,0.049322367
+Paternity Leave Store,Income,Income,Store,0.0002616048,0.0002616048

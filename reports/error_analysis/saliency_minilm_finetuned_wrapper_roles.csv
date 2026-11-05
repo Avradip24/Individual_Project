@@ -1,0 +1,7 @@
+model,part,rows,n,mean_drop_p_true,mean_drop_p_other
+minilm_finetuned,tag,right,745,0.11529622226953506,-0.0776757225394249
+minilm_finetuned,tag,wrong,206,-0.2992222309112549,0.38472509384155273
+minilm_finetuned,phrase,right,745,-0.03774362429976463,0.03736068308353424
+minilm_finetuned,phrase,wrong,206,-0.8827642798423767,0.8929369449615479
+minilm_finetuned,merchant,right,745,0.9619648456573486,-0.9626268744468689
+minilm_finetuned,merchant,wrong,206,0.08520030230283737,-0.10702458769083023

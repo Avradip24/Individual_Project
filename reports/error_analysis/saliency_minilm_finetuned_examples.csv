@@ -1,0 +1,48 @@
+text,true,predicted,word,support_pred,support_true
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,[credit],-8.34465e-07,2.8453564e-07
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,Zelle,4.1365623e-05,-8.171769e-06
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,payment,0.0012063384,-2.8777693e-05
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,from,0.0012182593,-0.0010163198
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,JOHN,-2.3841858e-07,8.3869736e-08
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,PEREZ,0.0,1.6499268e-07
+[credit] Zelle payment from JOHN PEREZ I10QQN0NCF9F,Income,Other,I10QQN0NCF9F,0.0,-6.6264874e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,[credit],1.1920929e-07,3.0171395e-07
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,Zelle,0.00026017427,-2.0580523e-05
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,payment,0.26194018,-0.00040564247
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,from,5.5789948e-05,-3.4580662e-05
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,MARY,-4.7683716e-07,6.002119e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,JOHNSON,0.0,-3.1601417e-08
+[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI,Income,Other,80CVGO6OPIMI,3.5762787e-07,-1.1830332e-07
+Family Dollar Store,Shopping,Shopping,Family,0.77310306,0.77310306
+Family Dollar Store,Shopping,Shopping,Dollar,0.7703725,0.7703725
+Family Dollar Store,Shopping,Shopping,Store,0.11563367,0.11563367
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,Family,0.86158806,0.100524634
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,Dollar,-0.13834131,0.100533314
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,#3898,0.71453345,-0.70154303
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,-,0.019530237,-0.01637905
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,USA,0.61000365,-0.5975518
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,Branch,0.13410556,-0.11606709
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,-,0.019454837,-0.016208231
+Family Dollar #3898 - USA Branch - Weekend,Shopping,Insurance,Weekend,-0.022294581,0.017636314
+Von Maur - USA Center TXN425720,Shopping,Shopping,Von,0.9930092,0.9930092
+Von Maur - USA Center TXN425720,Shopping,Shopping,Maur,-0.0065799356,-0.0065799356
+Von Maur - USA Center TXN425720,Shopping,Shopping,-,-0.006573975,-0.006573975
+Von Maur - USA Center TXN425720,Shopping,Shopping,USA,-0.0051813126,-0.0051813126
+Von Maur - USA Center TXN425720,Shopping,Shopping,Center,0.010135233,0.010135233
+Von Maur - USA Center TXN425720,Shopping,Shopping,TXN425720,0.31063694,0.31063694
+Von Maur,Shopping,Shopping,Von,0.9993089,0.9993089
+Von Maur,Shopping,Shopping,Maur,0.994027,0.994027
+UPS Store #6885 TXN995111,Shopping,Transportation,UPS,0.5430928,-0.54570854
+UPS Store #6885 TXN995111,Shopping,Transportation,Store,-0.45665383,0.45394883
+UPS Store #6885 TXN995111,Shopping,Transportation,#6885,-0.42831665,0.42636707
+UPS Store #6885 TXN995111,Shopping,Transportation,TXN995111,-0.39484566,0.3932819
+UPS Store #8485,Shopping,Shopping,UPS,-0.23950076,-0.23950076
+UPS Store #8485,Shopping,Shopping,Store,0.76005113,0.76005113
+UPS Store #8485,Shopping,Shopping,#8485,0.75788224,0.75788224
+Paternity Leave #5861 Online,Income,Shopping,Paternity,0.99887055,-0.0006964482
+Paternity Leave #5861 Online,Income,Shopping,Leave,-2.759695e-05,1.9086114e-05
+Paternity Leave #5861 Online,Income,Shopping,#5861,0.993865,-0.9934009
+Paternity Leave #5861 Online,Income,Shopping,Online,-3.0994415e-06,2.9820512e-06
+Paternity Leave Store,Income,Shopping,Paternity,0.97740257,0.019473506
+Paternity Leave Store,Income,Shopping,Leave,-0.02189809,0.019452121
+Paternity Leave Store,Income,Shopping,Store,-0.012486577,0.011009459

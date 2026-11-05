@@ -1,0 +1,10 @@
+model,version,accuracy,share_predicted_other,agreement_with_cached
+distilbert_finetuned,original,0.8317560462670873,0.16824395373291273,1.0
+distilbert_finetuned,no_phrase,1.0,0.0,
+distilbert_finetuned,merchant_only,1.0,0.0,
+minilm_finetuned,original,0.7833859095688749,0.2103049421661409,1.0
+minilm_finetuned,no_phrase,0.9894847528916929,0.0,
+minilm_finetuned,merchant_only,0.9905362776025236,0.0,
+frozen_embedding_logreg,original,0.5972660357518401,0.027339642481598318,1.0
+frozen_embedding_logreg,no_phrase,0.7108307045215563,0.007360672975814932,
+frozen_embedding_logreg,merchant_only,0.8138801261829653,0.0,
