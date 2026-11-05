@@ -15,6 +15,8 @@ Run from the project root:
 Options: --rf (also score Random Forest; loads a 500 MB file)
 Writes reports/feature_importance/wrapper_ablation.csv
 """
+# pylint: disable=wrong-import-position,import-error
+# ruff: noqa: E402
 import pandas as pd
 import numpy as np
 import joblib

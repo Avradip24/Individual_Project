@@ -17,6 +17,8 @@ Run from the project root:
 Options: --term "preauthorized withdrawal"  --top 12
 Writes reports/feature_importance/*.csv
 """
+# pylint: disable=wrong-import-position,import-error
+# ruff: noqa: E402
 from scipy import sparse
 import pandas as pd
 import numpy as np
