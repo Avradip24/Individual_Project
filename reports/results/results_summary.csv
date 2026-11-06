@@ -1,0 +1,17 @@
+model,title,split,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+distilbert_finetuned,Fine-tuned DistilBERT,test,0.9945,0.9957,0.9957,0.9957,0.9945
+distilbert_finetuned,Fine-tuned DistilBERT,ood,0.9169,0.9419,0.9336,0.9329,0.9176
+logistic_regression,Logistic Regression v2,test,0.9944,0.9957,0.9958,0.9957,0.9944
+logistic_regression,Logistic Regression v2,ood,0.8535,0.8812,0.8955,0.8811,0.8492
+minilm_finetuned,Fine-tuned MiniLM,test,0.9927,0.9941,0.9943,0.9942,0.9927
+minilm_finetuned,Fine-tuned MiniLM,ood,0.855,0.8887,0.8823,0.8767,0.8564
+linear_svm,Linear SVM v2,test,0.9942,0.9956,0.9953,0.9954,0.9942
+linear_svm,Linear SVM v2,ood,0.8331,0.8747,0.8599,0.8543,0.8319
+multinomial_nb,Naive Bayes v2,test,0.9802,0.981,0.9844,0.9825,0.9802
+multinomial_nb,Naive Bayes v2,ood,0.815,0.8444,0.8484,0.8365,0.8152
+gradient_boosting,XGBoost v2,test,0.992,0.9934,0.9939,0.9936,0.992
+gradient_boosting,XGBoost v2,ood,0.7805,0.8364,0.8133,0.8191,0.7828
+random_forest,Random Forest v2,test,0.9495,0.9562,0.9539,0.9547,0.9498
+random_forest,Random Forest v2,ood,0.7275,0.7747,0.7395,0.745,0.7256
+frozen_embedding_logreg,Frozen MiniLM + LogReg,test,0.8645,0.8529,0.8778,0.8626,0.8643
+frozen_embedding_logreg,Frozen MiniLM + LogReg,ood,0.6701,0.6613,0.704,0.6623,0.669
