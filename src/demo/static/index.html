@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartSpend demo</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #5d6671; --line: #dfe3e8;
+    --accent: #1f5fbf; --accent-soft: #dbe8fa; --warn-bg: #fff6e0; --warn-line: #e6c36a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171b; --card: #1d2227; --text: #e8ebef; --muted: #99a3ae; --line: #323a43;
+      --accent: #6ea4ee; --accent-soft: #223a5c; --warn-bg: #3a3118; --warn-line: #8a7a3a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+          padding: 16px; margin-bottom: 16px; }
+  label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 4px; }
+  input[type=text], select { width: 100%; padding: 10px; font: inherit; color: var(--text);
+          background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+  .row > div { flex: 1 1 200px; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; border: 1px solid var(--accent);
+           background: var(--accent); color: #fff; padding: 10px 18px; margin-top: 14px; }
+  button:disabled { opacity: .6; cursor: wait; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .examples button { margin: 0; padding: 4px 10px; font-size: .85rem; background: transparent;
+           color: var(--accent); border-color: var(--line); }
+  .result-label { font-size: 1.6rem; font-weight: 600; }
+  .meta { color: var(--muted); font-size: .85rem; }
+  .bar { display: grid; grid-template-columns: 130px 1fr 56px; align-items: center; gap: 10px;
+         margin-top: 8px; font-size: .95rem; }
+  .track { background: var(--accent-soft); border-radius: 6px; height: 12px; overflow: hidden; }
+  .fill { background: var(--accent); height: 100%; }
+  .note { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 8px;
+          padding: 10px 12px; font-size: .88rem; margin-top: 14px; }
+  .error { color: #c0392b; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SmartSpend</h1>
+  <p class="sub">Categorise a bank transaction description. Demonstrator for the study
+     &ldquo;Classical and Transformer-Based NLP Models for Personal Finance Transaction
+     Categorization&rdquo;.</p>
+
+  <form id="form" class="card">
+    <label for="text">Transaction description</label>
+    <input id="text" type="text" maxlength="200" required autocomplete="off"
+           placeholder="e.g. EDEKA 4471 FFM">
+    <div class="examples" id="examples"></div>
+    <div class="row">
+      <div>
+        <label for="model">Model</label>
+        <select id="model"></select>
+      </div>
+      <div>
+        <label for="direction">Direction tag</label>
+        <select id="direction">
+          <option value="none">none</option>
+          <option value="debit">[debit]</option>
+          <option value="credit">[credit]</option>
+        </select>
+      </div>
+    </div>
+    <button id="go" type="submit">Categorise</button>
+  </form>
+
+  <section id="result" class="card" hidden aria-live="polite">
+    <div class="meta" id="modelline"></div>
+    <div class="result-label" id="category"></div>
+    <div class="meta" id="inputline"></div>
+    <div id="bars"></div>
+    <div class="note" id="note"></div>
+  </section>
+  <p id="error" class="error" role="alert" hidden></p>
+</main>
+
+<script>
+const EXAMPLES = [
+  ["[debit] Kroger 8888 Miami", "none"],
+  ["[debit] Starbucks #1234", "none"],
+  ["[credit] Zelle payment from MARY JOHNSON 80CVGO6OPIMI", "none"],
+  ["Family Dollar Store", "none"],
+  ["[debit] PREAUTHORIZED WITHDRAWAL TO AIRBNB", "none"],
+  ["Paternity Leave Store", "none"],
+];
+const $ = (id) => document.getElementById(id);
+
+async function init() {
+  try {
+    const models = await (await fetch("/models")).json();
+    for (const [key, info] of Object.entries(models)) {
+      const o = document.createElement("option");
+      o.value = key; o.textContent = info.name; o.title = info.description;
+      $("model").appendChild(o);
+    }
+  } catch (e) { showError("Could not reach the service."); }
+  for (const [text, dir] of EXAMPLES) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = text.length > 34 ? text.slice(0, 32) + "…" : text;
+    b.title = text;
+    b.onclick = () => { $("text").value = text; $("direction").value = dir; $("text").focus(); };
+    $("examples").appendChild(b);
+  }
+}
+
+function showError(msg) { $("error").textContent = msg; $("error").hidden = false; }
+
+$("form").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  $("error").hidden = true;
+  $("go").disabled = true; $("go").textContent = "Working…";
+  try {
+    const res = await fetch("/predict", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: $("text").value, model: $("model").value,
+                             direction: $("direction").value, top_k: 3 }),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      const d = data.detail;
+      throw new Error(typeof d === "string" ? d : "Invalid input.");
+    }
+    $("modelline").textContent = data.model + " · " + data.latency_ms + " ms";
+    $("category").textContent = data.category + " (" + (data.confidence * 100).toFixed(1) + "%)";
+    $("inputline").textContent = "Model input: " + data.model_input;
+    $("note").textContent = data.note;
+    const bars = $("bars"); bars.textContent = "";
+    for (const c of data.top) {
+      const row = document.createElement("div"); row.className = "bar";
+      const name = document.createElement("span"); name.textContent = c.category;
+      const track = document.createElement("div"); track.className = "track";
+      const fill = document.createElement("div"); fill.className = "fill";
+      fill.style.width = (c.probability * 100).toFixed(1) + "%"; track.appendChild(fill);
+      const pct = document.createElement("span"); pct.textContent = (c.probability * 100).toFixed(1) + "%";
+      row.append(name, track, pct); bars.appendChild(row);
+    }
+    $("result").hidden = false;
+  } catch (e) {
+    $("result").hidden = true; showError(e.message);
+  } finally {
+    $("go").disabled = false; $("go").textContent = "Categorise";
+  }
+});
+init();
+</script>
+</body>
+</html>
