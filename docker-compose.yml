@@ -1,0 +1,10 @@
+services:
+  smartspend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Trained models stay on the host and are mounted read-only.
+      - ./models:/models:ro
+    environment:
+      MODELS_DIR: /models

@@ -1,0 +1,15 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+data
+models
+reports
+docs
+notebooks
+tests
+*.md
+*.zip
+*.bak
