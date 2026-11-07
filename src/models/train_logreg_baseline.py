@@ -11,6 +11,10 @@ Evaluates on all three held-out sets, since the whole point of this project
 is comparing behavior across them, not just reporting one accuracy number:
   - val / test (in-distribution): "how good is it on data like it trained on"
   - test_ood (unseen merchants):   "how good is it on merchants it never saw"
+
+Legacy v1 baseline (untuned, word features), kept for reference; the reported results use
+train_classical_v2.py. Run from the project root:
+    uv run python src/models/train_logreg_baseline.py
 """
 
 from pathlib import Path

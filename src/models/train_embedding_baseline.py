@@ -20,6 +20,9 @@ models structurally cannot -- directly testing the project's central
 hypothesis.
 
 Requires: uv add sentence-transformers
+
+Run from the project root:
+    uv run python src/models/train_embedding_baseline.py
 """
 
 import time

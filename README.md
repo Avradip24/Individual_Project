@@ -142,10 +142,15 @@ and are skipped when `models/` is absent.
 
 ## AI-use disclosure
 
-TODO: confirm and edit before submission. Draft: Claude (Anthropic) was used as an assistant for
-planning, code review and debugging, drafting analysis scripts and the demonstrator, and drafting
-documentation. All experiments were run, and all results checked and interpreted, by the author, who
-is responsible for the content.
+An AI assistant (Claude, by Anthropic) was used during this project as a coding and writing aid:
+for planning the work step by step, writing and debugging parts of the code (including the
+evaluation and error-analysis scripts, the demonstrator and the tests), suggesting analyses, and
+drafting the documentation (`docs/methodology_log.md` and this README). The author ran every
+experiment on their own machine or on Google Colab, supplied all outputs, checked the results
+against the data, and made the decisions about scope, models and interpretation. Claims in the
+log that the assistant first stated wrongly were corrected after checking (for example the
+Random Forest and Zelle statement, §10.5). The author is responsible for the content of the
+repository and of the report.
 
 ## Licence
 

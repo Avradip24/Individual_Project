@@ -3,7 +3,7 @@ Remap both raw sources onto the project's 13-category
 taxonomy, balance their scale, and write interim files.
 
 Run from the project root (adjust paths if needed):
-    uv run python build_interim_dataset.py
+    uv run python src/data/build_interim_dataset.py
 """
 
 from pathlib import Path

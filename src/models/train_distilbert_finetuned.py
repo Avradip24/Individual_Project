@@ -13,6 +13,8 @@ from Google Drive (see DATA_DIR / MODEL_OUT_DIR below) so the trained model
 survives even if the Colab session disconnects.
 
 Requires (in Colab): !pip install transformers accelerate -q
+
+Run on a Colab GPU (see above), not locally.
 """
 
 import random

@@ -14,6 +14,9 @@ Approach:
      final_category.
 
 Requires: uv add rapidfuzz
+
+Run from the project root:
+    uv run python src/data/split_dataset.py
 """
 
 import re
