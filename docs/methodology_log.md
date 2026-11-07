@@ -791,6 +791,26 @@ The classical models share a 1.4 MB fitted feature pipeline (not included in the
 
 **Caveats:** one machine and one run; the frozen MiniLM latency is noisy (p95 is 3.7 times its median, and it shares the architecture of fine-tuned MiniLM, which is much faster) and was not re-measured; Naive Bayes being slower than Logistic Regression (6.7 against 3.05 ms) is unexplained; batch throughput uses library-default threading; GPU inference was not measured. XGBoost was trained on a GPU and exported to its native format for CPU evaluation (the model is unchanged).
 
+
+### 11.1 Training and Inference Cost: Combined Summary
+
+One table for the report, drawing together the training costs (§5.1, §6, §7, §7.1, §8) and the inference costs above. Hardware: laptop CPU (AMD, 12 logical cores) or a free Colab T4 GPU, as stated; times from different hardware are not comparable.
+
+| Model | Parameters | Trained on | Training time | Size on disk | Median latency | Peak RAM | OOD macro F1 |
+|---|---|---|---|---|---|---|---|
+| Logistic Regression v2 | 505,895 (coefficients) | laptop CPU | about 20 s per full-data fit | 4.1 MB | 3.05 ms | 153 MB | 0.8811 |
+| Linear SVM v2 | 505,895 (coefficients) | laptop CPU | seconds to about 1 min per fit | 4.1 MB | 3.22 ms | 182 MB | 0.8514 |
+| Naive Bayes v2 | 505,895 (log-probabilities) | laptop CPU | seconds per fit | 8.1 MB | 6.70 ms | 186 MB | 0.8365 |
+| XGBoost v2 | 56,884 (tree nodes) | Colab T4 GPU | about 6 min for the whole search and final fit; about 32 min per full-data fit on CPU | 4.5 MB | 9.58 ms | 245 MB | 0.8191 |
+| Random Forest v2 | 3,063,818 (tree nodes) | laptop CPU | seconds to about 1 min per fit | 515 MB | 92.6 ms | 529 MB | 0.7450 |
+| Frozen MiniLM + LogReg | 117,658,765 frozen weights, plus a 5,005-parameter classifier trained (13 x 384 weights + 13 biases, calculated) | laptop CPU | about 16 min to encode the 96k strings once; the classifier fit is quick | 471 MB | 88.8 ms | 889 MB | 0.6623 |
+| Fine-tuned DistilBERT | 66,963,469 (all fine-tuned) | Colab T4 GPU | 23.2 min (6 epochs); 9.9 min for the 3-epoch variant | 268 MB | 62.1 ms | 933 MB | 0.9329 |
+| Fine-tuned MiniLM | 117,658,765 (all fine-tuned) | Colab T4 GPU | 27.8 min (6 epochs) | 471 MB | 32.6 ms | 1,061 MB | 0.8767 |
+
+**Reading.** Fine-tuning DistilBERT costs about 23 minutes on a free GPU, which is not a large training bill; the price of the +5.2 points over Logistic Regression is paid mainly at inference (about 20 times the latency, §11) and in memory. Parameter counts are not comparable across families (coefficients, tree nodes, weights), and the classical models' parameter counts reflect the 38,914-feature input, not model complexity.
+
+**Caveats.** Classical training times are rough single measurements, not a controlled benchmark, and exclude the hyperparameter search except for XGBoost. The transformers were not tuned, so their cost is one training run. The three-epoch DistilBERT run, the learning-curve retrainings (§12) and the Colab sessions' set-up time are not included. GPU time is a free Colab T4 and varies by session. Energy use was not measured.
+
 ---
 
 ## 12. Learning Curves and Low-Resource Categories
@@ -915,3 +935,4 @@ The classical models share a 1.4 MB fitted feature pipeline (not included in the
 - §10.5: transformer wrapper test (DistilBERT 0.832 to 1.000, MiniLM 0.783 to 0.989, frozen 0.597 to 0.711/0.814) and occlusion saliency for DistilBERT and MiniLM (the wrapper phrase overrides the merchant on the wrong rows). §0: error analysis marked complete, with limitations listed.
 - Added §8.1 (accuracy, macro precision/recall/F1 and per-category F1 for all eight models on both test sets, from `src/eval/results_table.py`). Linear SVM uses its Platt-calibrated predictions there (0.8543, against 0.8514 raw in §8).
 - Added §13 (demonstrator: FastAPI, web UI, Docker, 34 passing tests) and §14 (reproducibility: what is git-ignored, what ran on Colab versus the laptop, clean-up items). Updated §0 to 7 November 2026 (phases 4-5; demo and error analysis done), recorded the dataset licences in §1 (both MIT; DoDataThings tagged Synthetic) and added a synthetic-data limitation. Merged and checked against all earlier draft copies of the log: nothing in them was missing from this version.
+- Added §11.1: one combined training-and-inference cost table (parameters, hardware, training time, size, latency, memory, OOD macro F1) for all eight models, for the report.
