@@ -163,7 +163,6 @@ def main():
     W = rng.multinomial(n_clusters, np.full(
         n_clusters, 1 / n_clusters), size=args.n_boot)
     f1_cl, acc_cl, f1_row = {}, {}, {}
-    row_w = None
     for m in MODELS:
         conf = (W @ per_cluster[m]).reshape(args.n_boot, K, K)
         f1_cl[m] = macro_f1_from_counts(conf)
@@ -205,7 +204,8 @@ def main():
     print(
         f"OOD MACRO F1 WITH 95% INTERVALS ({args.n_boot} resamples; cluster = honest, row-level = naive)")
     print("=" * 100)
-    print(f"{'Model':<36}{'F1':>8}  {'cluster 95% CI':<20}{'row-level 95% CI':<20}{'wider by':>9}{'top-5 clusters':>16}")
+    print(f"{'Model':<36}{'F1':>8}  {'cluster 95% CI':<20}{'row-level 95% CI':<20}"
+          f"{'wider by':>9}{'top-5 clusters':>16}")
     for _, r in res.iterrows():
         print(f"{SHORT[r.model]:<36}{r.ood_macro_f1:>8.4f}  "
               f"[{r.ci_cluster_low:.3f}, {r.ci_cluster_high:.3f}]   "

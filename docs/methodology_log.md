@@ -112,7 +112,9 @@ gap; the training data is English-only, so this is expected. Per
 supervisor guidance, German-language evaluation is not a focus of the
 project: the multilingual model variants and the informal probe are
 reported as a limitation and future work, and no personal bank
-statement is required (§4).
+statement is required (§4). A follow-up probe (§4.2) found that the
+fine-tuned multilingual MiniLM gets the same 4/10 as English-only
+DistilBERT, so multilingual pretraining did not help on these strings.
 
 **Not yet done (explicitly tracked):**
 - Limitations to state in the report (the error analysis itself is
@@ -250,7 +252,26 @@ Before the formal hand-labeled German OOD set exists, a quick informal check was
 
 **Notable pattern worth investigating further — "Transportation" as an apparent fallback:** 4 of the 6 wrong predictions (REWE, DM Drogerie Markt, DB Fernverkehr, Apotheke am Dom — true categories Groceries/Healthcare/Travel/Healthcare) were all misclassified specifically as **Transportation**, not scattered across categories. Working hypothesis: Transportation's broad, heterogeneous training definition (fuel, tolls, parking, car maintenance, public transit) may make its decision region behave like a "default" for unfamiliar/out-of-distribution input. Not confirmed — would need a follow-up test with pure gibberish/non-language strings to check whether this is a genuine attractor behavior or coincidence from this small sample.
 
-**Planned follow-up (not yet done):** run the same 10 strings through the frozen multilingual embedding model (Approach 1) for direct comparison — that model has actual multilingual pretraining despite losing on every aggregate metric, so it may handle real German text differently (better or worse) than DistilBERT despite the aggregate ranking. Worth doing before the report is finalized, even though deprioritized for now in favor of the formal calibration analysis.
+**Follow-up:** done on 9 November 2026 with the other models and a gibberish control, see §4.2. In the re-run, DistilBERT again scores 4/10, but 5 of its 6 wrong predictions (not 4 of 6) are Transportation: EDEKA is also predicted Transportation at 83%, which matches the 82.9% confidence listed above, so the count above appears to have missed it. The re-run output is the reference.
+
+### 4.2 Follow-up Probe: Four Models and a Gibberish Control (illustrative, not a metric)
+
+`src/eval/german_probe.py` runs the same 10 strings (2 English controls, 8 German) through fine-tuned DistilBERT, fine-tuned multilingual MiniLM, frozen multilingual MiniLM + LogReg and Logistic Regression v2, with the same scoring as §4.1 (predicted label must equal the expected category). Output: `reports/german_probe/german_probe.csv`. **Ten hand-picked strings: no statistical claim can be drawn from this.**
+
+| Model | Correct (of 10) | German (of 8) | Mean confidence when wrong | Wrong predictions that are Transportation |
+|---|---|---|---|---|
+| Fine-tuned DistilBERT | 4 | 2 | 0.94 | 5 of 6 |
+| Fine-tuned MiniLM (multilingual) | 4 | 2 | 0.98 | 0 of 6 (mostly Shopping) |
+| Frozen MiniLM + LogReg | 0 | 0 | 0.57 | 2 of 10 |
+| Logistic Regression v2 | 3 | 1 | 0.47 | 3 of 7 |
+
+- **Multilingual pretraining did not help.** Fine-tuned MiniLM, whose base model was pretrained on many languages, gets the same 4/10 as English-only DistilBERT, and the same four strings right (both English controls, ALDI SUED, TELEKOM DEUTSCHLAND). The mechanism proposed in §6 (pretrained world knowledge about German brands transferring to unseen strings) is **not supported** by this probe. After fine-tuning on English-only transaction data, the multilingual model did not behave differently from the English one on these strings.
+- **The frozen multilingual embedding scored 0/10, including the English controls** (STARBUCKS STORE 1234 is predicted Shopping at 54%), consistent with its weak OOD result (§6). It was much less confident when wrong (mean 0.57) than the fine-tuned transformers.
+- **Both fine-tuned transformers are confidently wrong:** mean confidence 0.94 (DistilBERT) and 0.98 (MiniLM) on their wrong answers, against 0.47 for Logistic Regression. This repeats the calibration finding of §9 on a small, different kind of input.
+- **The Transportation-fallback hypothesis (§4.1) is only partly supported.** On eight meaningless strings (`XQZ KLM 9921`, `ZZZZ WWWW`, ...), DistilBERT predicts Transportation 4 times (mean confidence 0.92) and Logistic Regression 4 times, but fine-tuned MiniLM mostly predicts Shopping (3) and spreads the rest, and the frozen model spreads its predictions. So the effect appears for the two English-vocabulary models and not for the multilingual one, which suggests it depends on the model and is not a property of the Transportation class. With eight strings this is a hint, not a result.
+- **No model predicts Other for any of the 8 meaningless strings** (0 of 32 predictions). In this dataset Other mostly holds fees and transfers, not "unknown", so the models have never been taught an "I don't know" class; a deployed system would need a rejection mechanism, which the poor confidence signal (§9) cannot provide on its own.
+
+**Limitation:** 10 strings chosen by hand, expected categories assigned by the author (DM Drogerie Markt as Healthcare is arguable: Shopping is also defensible), one run, no repeated seeds. The result is reported as a limitation and future work (a proper German test set was descoped, §4).
 
 ---
 
@@ -936,3 +957,4 @@ One table for the report, drawing together the training costs (§5.1, §6, §7, 
 - Added §8.1 (accuracy, macro precision/recall/F1 and per-category F1 for all eight models on both test sets, from `src/eval/results_table.py`). Linear SVM uses its Platt-calibrated predictions there (0.8543, against 0.8514 raw in §8).
 - Added §13 (demonstrator: FastAPI, web UI, Docker, 34 passing tests) and §14 (reproducibility: what is git-ignored, what ran on Colab versus the laptop, clean-up items). Updated §0 to 7 November 2026 (phases 4-5; demo and error analysis done), recorded the dataset licences in §1 (both MIT; DoDataThings tagged Synthetic) and added a synthetic-data limitation. Merged and checked against all earlier draft copies of the log: nothing in them was missing from this version.
 - Added §11.1: one combined training-and-inference cost table (parameters, hardware, training time, size, latency, memory, OOD macro F1) for all eight models, for the report.
+- Added §4.2: the planned follow-up to the German probe (same 10 strings on DistilBERT, fine-tuned MiniLM, frozen MiniLM + LogReg and Logistic Regression v2, plus a gibberish control, `src/eval/german_probe.py`). Multilingual pretraining did not help (MiniLM 4/10 = DistilBERT 4/10); the Transportation-fallback hypothesis is only partly supported; no model predicts Other for meaningless strings. Corrected the §4.1 count to 5 of 6 wrong predictions being Transportation.

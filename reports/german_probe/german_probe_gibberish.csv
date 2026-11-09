@@ -1,0 +1,33 @@
+model,text,predicted,confidence
+DistilBERT (fine-tuned),XQZ KLM 9921,Utilities,0.981
+DistilBERT (fine-tuned),ZZZZ WWWW,Transportation,1.0
+DistilBERT (fine-tuned),ASDF QWER 1234,Groceries,1.0
+DistilBERT (fine-tuned),LOREM IPSUM DOLOR,Restaurants,1.0
+DistilBERT (fine-tuned),#### ****,Transportation,0.447
+DistilBERT (fine-tuned),QPXV LRTN WDBK,Transportation,0.96
+DistilBERT (fine-tuned),ABCD EFGH IJKL,Utilities,1.0
+DistilBERT (fine-tuned),0000 1111 2222,Transportation,1.0
+MiniLM (fine-tuned),XQZ KLM 9921,Healthcare,0.886
+MiniLM (fine-tuned),ZZZZ WWWW,Entertainment,1.0
+MiniLM (fine-tuned),ASDF QWER 1234,Utilities,0.999
+MiniLM (fine-tuned),LOREM IPSUM DOLOR,Shopping,1.0
+MiniLM (fine-tuned),#### ****,Groceries,1.0
+MiniLM (fine-tuned),QPXV LRTN WDBK,Transportation,1.0
+MiniLM (fine-tuned),ABCD EFGH IJKL,Shopping,0.993
+MiniLM (fine-tuned),0000 1111 2222,Shopping,0.999
+Frozen MiniLM + LogReg,XQZ KLM 9921,Groceries,0.462
+Frozen MiniLM + LogReg,ZZZZ WWWW,Utilities,0.435
+Frozen MiniLM + LogReg,ASDF QWER 1234,Shopping,0.498
+Frozen MiniLM + LogReg,LOREM IPSUM DOLOR,Healthcare,0.551
+Frozen MiniLM + LogReg,#### ****,Restaurants,0.579
+Frozen MiniLM + LogReg,QPXV LRTN WDBK,Healthcare,0.305
+Frozen MiniLM + LogReg,ABCD EFGH IJKL,Shopping,0.63
+Frozen MiniLM + LogReg,0000 1111 2222,Utilities,0.971
+Logistic Regression v2,XQZ KLM 9921,Transportation,0.416
+Logistic Regression v2,ZZZZ WWWW,Entertainment,0.365
+Logistic Regression v2,ASDF QWER 1234,Transportation,0.516
+Logistic Regression v2,LOREM IPSUM DOLOR,Entertainment,0.253
+Logistic Regression v2,#### ****,Groceries,0.997
+Logistic Regression v2,QPXV LRTN WDBK,Entertainment,0.33
+Logistic Regression v2,ABCD EFGH IJKL,Transportation,0.279
+Logistic Regression v2,0000 1111 2222,Transportation,0.97

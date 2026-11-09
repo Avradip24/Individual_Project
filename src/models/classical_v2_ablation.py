@@ -27,7 +27,9 @@ from sklearn.metrics import accuracy_score, f1_score
 from sklearn.svm import LinearSVC
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from src.models.classical_features import build_feature_union  # noqa: E402  # pylint: disable=import-error,wrong-import-position
+from src.models.classical_features import (
+    build_feature_union,  # noqa: E402  # pylint: disable=import-error,wrong-import-position
+)
 
 DATA_DIR = Path("data/processed")
 REPORT_DIR = Path("reports/classical_v2")

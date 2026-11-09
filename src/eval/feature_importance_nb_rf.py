@@ -15,13 +15,14 @@ Options: --top 12
 Writes reports/feature_importance/top_features_multinomial_nb.csv,
 top_features_random_forest.csv and feature_group_share.csv
 """
-import pandas as pd
-import numpy as np
-import joblib
 import argparse
 import json
 import sys
 from pathlib import Path
+
+import joblib
+import numpy as np
+import pandas as pd
 
 # unpickle classes from src/
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))

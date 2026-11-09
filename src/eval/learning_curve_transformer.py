@@ -21,7 +21,9 @@ Resumable: fractions already present in the output CSV are skipped, and the CSVs
 written after every fraction, so a disconnect loses at most one run.
 
 For fine-tuned MiniLM later:
-    !python learning_curve_transformer.py --model-name sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 --tag minilm_finetuned --fractions 0.05,0.1,0.25,0.5 --data-dir . --out-dir results
+    !python learning_curve_transformer.py \\
+        --model-name sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 \\
+        --tag minilm_finetuned --fractions 0.05,0.1,0.25,0.5 --data-dir . --out-dir results
 Then, in a separate notebook cell, download the two result CSVs:
     from google.colab import files
     files.download("results/learning_curves_distilbert_finetuned.csv")
@@ -45,8 +47,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.utils.class_weight import compute_class_weight
 from torch.utils.data import Dataset
-from transformers import (AutoModelForSequenceClassification, AutoTokenizer,
-                          EarlyStoppingCallback, Trainer, TrainingArguments)
+from transformers import (
+    AutoModelForSequenceClassification,
+    AutoTokenizer,
+    EarlyStoppingCallback,
+    Trainer,
+    TrainingArguments,
+)
 
 MAX_LENGTH = 32
 NUM_EPOCHS = 6

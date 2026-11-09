@@ -25,13 +25,14 @@ Writes reports/error_analysis/saliency_<model>_examples.csv and _wrapper_roles.c
 """
 # pylint: disable=wrong-import-position,import-error
 # ruff: noqa: E402
-from wrapper_ablation_transformers import PHRASE, load_predictor
-import pandas as pd
-import numpy as np
 import argparse
 import json
 import sys
 from pathlib import Path
+
+import numpy as np
+import pandas as pd
+from wrapper_ablation_transformers import PHRASE, load_predictor
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # project root
 sys.path.insert(0, str(Path(__file__).resolve().parent))      # sibling module

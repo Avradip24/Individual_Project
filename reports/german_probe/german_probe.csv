@@ -1,0 +1,41 @@
+model,text,lang,expected,predicted,confidence,correct
+DistilBERT (fine-tuned),STARBUCKS STORE 1234,EN,Restaurants,Restaurants,1.0,True
+DistilBERT (fine-tuned),[debit] WITHDRAWAL FROM MIDAS,EN,Transportation,Transportation,1.0,True
+DistilBERT (fine-tuned),REWE-SAG-7342,DE,Groceries,Transportation,1.0,False
+DistilBERT (fine-tuned),EDEKA 4471 FFM,DE,Groceries,Transportation,0.829,False
+DistilBERT (fine-tuned),ALDI SUED 0091,DE,Groceries,Groceries,0.529,True
+DistilBERT (fine-tuned),DM DROGERIE MARKT,DE,Healthcare,Transportation,1.0,False
+DistilBERT (fine-tuned),TELEKOM DEUTSCHLAND,DE,Utilities,Utilities,0.929,True
+DistilBERT (fine-tuned),DB FERNVERKEHR AG,DE,Travel,Transportation,0.999,False
+DistilBERT (fine-tuned),MAINOVA AG FFM,DE,Utilities,Shopping,0.814,False
+DistilBERT (fine-tuned),APOTHEKE AM DOM,DE,Healthcare,Transportation,1.0,False
+MiniLM (fine-tuned),STARBUCKS STORE 1234,EN,Restaurants,Restaurants,0.994,True
+MiniLM (fine-tuned),[debit] WITHDRAWAL FROM MIDAS,EN,Transportation,Transportation,1.0,True
+MiniLM (fine-tuned),REWE-SAG-7342,DE,Groceries,Shopping,1.0,False
+MiniLM (fine-tuned),EDEKA 4471 FFM,DE,Groceries,Shopping,1.0,False
+MiniLM (fine-tuned),ALDI SUED 0091,DE,Groceries,Groceries,0.999,True
+MiniLM (fine-tuned),DM DROGERIE MARKT,DE,Healthcare,Shopping,0.886,False
+MiniLM (fine-tuned),TELEKOM DEUTSCHLAND,DE,Utilities,Utilities,1.0,True
+MiniLM (fine-tuned),DB FERNVERKEHR AG,DE,Travel,Shopping,0.994,False
+MiniLM (fine-tuned),MAINOVA AG FFM,DE,Utilities,Shopping,0.999,False
+MiniLM (fine-tuned),APOTHEKE AM DOM,DE,Healthcare,Restaurants,1.0,False
+Frozen MiniLM + LogReg,STARBUCKS STORE 1234,EN,Restaurants,Shopping,0.537,False
+Frozen MiniLM + LogReg,[debit] WITHDRAWAL FROM MIDAS,EN,Transportation,Shopping,0.412,False
+Frozen MiniLM + LogReg,REWE-SAG-7342,DE,Groceries,Utilities,0.927,False
+Frozen MiniLM + LogReg,EDEKA 4471 FFM,DE,Groceries,Transportation,0.689,False
+Frozen MiniLM + LogReg,ALDI SUED 0091,DE,Groceries,Entertainment,0.288,False
+Frozen MiniLM + LogReg,DM DROGERIE MARKT,DE,Healthcare,Transportation,0.895,False
+Frozen MiniLM + LogReg,TELEKOM DEUTSCHLAND,DE,Utilities,Healthcare,0.533,False
+Frozen MiniLM + LogReg,DB FERNVERKEHR AG,DE,Travel,Education,0.386,False
+Frozen MiniLM + LogReg,MAINOVA AG FFM,DE,Utilities,Insurance,0.354,False
+Frozen MiniLM + LogReg,APOTHEKE AM DOM,DE,Healthcare,Restaurants,0.661,False
+Logistic Regression v2,STARBUCKS STORE 1234,EN,Restaurants,Restaurants,0.992,True
+Logistic Regression v2,[debit] WITHDRAWAL FROM MIDAS,EN,Transportation,Transportation,0.971,True
+Logistic Regression v2,REWE-SAG-7342,DE,Groceries,Entertainment,0.277,False
+Logistic Regression v2,EDEKA 4471 FFM,DE,Groceries,Transportation,0.395,False
+Logistic Regression v2,ALDI SUED 0091,DE,Groceries,Groceries,0.92,True
+Logistic Regression v2,DM DROGERIE MARKT,DE,Healthcare,Transportation,0.532,False
+Logistic Regression v2,TELEKOM DEUTSCHLAND,DE,Utilities,Healthcare,0.307,False
+Logistic Regression v2,DB FERNVERKEHR AG,DE,Travel,Entertainment,0.547,False
+Logistic Regression v2,MAINOVA AG FFM,DE,Utilities,Entertainment,0.8,False
+Logistic Regression v2,APOTHEKE AM DOM,DE,Healthcare,Transportation,0.466,False
